@@ -23,7 +23,7 @@ end
 
 def has_blackjack?(hand)
   cards = hand.flatten
-  # check if cards include an Ace and 10, 'J', 'Q', 'K'
+  # check if cards include an Ace and '10', 'J', 'Q' or 'K'
   if cards.include?('A') && (cards.include?('10') || cards.include?('J') ||
      cards.include?('Q') || cards.include?('K'))
     return true
